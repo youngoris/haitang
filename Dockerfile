@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # 复制 package.json 和 yarn.lock 文件
-COPY package.json yarn.lock ./
+COPY package.json ./
 
 # 安装项目依赖
 RUN yarn install --frozen-lockfile
