@@ -19,11 +19,3 @@ RUN yarn build
 # 安装 serve 来服务静态文件
 RUN yarn global add serve
 
-# 设置环境变量
-ENV PORT=3000
-
-# 开放容器的 3000 端口
-EXPOSE $PORT
-
-# 启动静态服务器
-CMD ["serve", "-s", "dist", "-p", "$PORT"]
