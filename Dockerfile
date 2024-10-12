@@ -16,6 +16,3 @@ COPY . .
 # 构建静态文件
 RUN yarn build
 
-# 安装 serve 来服务静态文件
-RUN yarn global add serve
-
