@@ -20,7 +20,7 @@ RUN yarn build
 RUN yarn global add serve
 
 # 设置环境变量
-ENV PORT=3000
+ENV PORT=3505
 
 # 开放容器的 3000 端口
 EXPOSE $PORT
