@@ -26,4 +26,5 @@ ENV PORT=3000
 EXPOSE $PORT
 
 # 启动静态服务器
-CMD ["serve", "-s", "dist", "-p", "$PORT"]
+CMD ["serve", "-s", "dist", "-l", "tcp://0.0.0.0:$PORT"]
+
